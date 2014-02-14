@@ -1,0 +1,52 @@
+<html>
+	<head>
+	<title>SIMPLE CALCULATOR</title>
+	<script language="JavaScript" src="calcmachine.js"></script>
+	</head>
+	<body onload="fclear()">
+	<center>
+	<hr><h2>Simple Complex Calculator</h2>
+	<marquee>Assignment given to P.M.Abhilash Anand by Menon on 3/02/2006</marquee><hr>
+	<table name=t1 bgcolor=blue>
+	<tr align=center>
+          <td colspan=5><input type=textbox name="txtin" size=46 maxlength=20 onkeyup="fvalidate()">
+	<tr align=center>
+	  <td><input type=button name="bclear" value=" Clear "	 onclick="fclear()">
+	  <td><input type=button name="broot"  value="  sqrt  "    onclick="fmachine('uopt','sqrt')">
+	  <td><input type=button name="bpow"   value="  X^y  "     onclick="fmachine('opt','^')">
+	  <td><input type=button name="bexp"   value="  E^x  "     onclick="fmachine('uopt','E')">
+	  <td><input type=button name="bmod"   value="    %    "   onclick="fmachine('opt','%')">
+	<tr align=center>
+	  <td><input type=button name="bsin"   value="  Sin x  "   onclick="fmachine('uopt','sin')">
+	  <td><input type=button name="b7"     value="     7     " onclick="fmachine('oper',7)">
+	  <td><input type=button name="b8"     value="     8     " onclick="fmachine('oper',8)">
+	  <td><input type=button name="b9"     value="     9     " onclick="fmachine('oper',9)">
+	  <td><input type=button name="badd"   value="     +     " onclick="fmachine('opt','+')">
+	<tr align=center>
+	  <td><input type=button name="bcos"   value=" Cos x "     onclick="fmachine('uopt','cos')">
+	  <td><input type=button name="b4"     value="     4     " onclick="fmachine('oper',4)">
+	  <td><input type=button name="b5"     value="     5     " onclick="fmachine('oper',5)">
+	  <td><input type=button name="b6"     value="     6     " onclick="fmachine('oper',6)">
+	  <td><input type=button name="bsub"   value="     -     " onclick="fmachine('opt','-')">
+	<tr align=center>
+	  <td><input type=button name="btan"   value=" Tan x "     onclick="fmachine('uopt','tan')">
+	  <td><input type=button name="b1"     value="     1     " onclick="fmachine('oper',1)">
+	  <td><input type=button name="b2"     value="     2     " onclick="fmachine('oper',2)">
+	  <td><input type=button name="b3"     value="     3     " onclick="fmachine('oper',3)">
+	  <td><input type=button name="bmul"   value="     *     " onclick="fmachine('opt','*')">
+	<tr align=center>
+	  <td><input type=button name="bpm"    value="    +/-    " onclick="fmachine('uopt','pm')">
+	  <td><input type=button name="b0"     value="     0     " onclick="fmachine('oper',0)">
+	  <td><input type=button name="bdot"   value="     .     " onclick="fmachine('oper','.')">
+	  <td><input type=button name="beq"    value="     =     " onclick="fmachine('=','=')">
+	  <td><input type=button name="bdiv"   value="     /     " onclick="fmachine('opt','/')">
+	<tr align=center>
+	  <td><input type=button name="bmc"    value="   MC   " onclick="fmem('c')">
+	  <td><input type=button name="bmr"    value="   MR   "  onclick="fmem('r')">
+	  <td><input type=button name="bmp"    value="   M+   "  onclick="fmem('+')">
+	  <td><input type=button name="bmm"    value="   M-   "  onclick="fmem('-')">
+	  <td><input type=button name="bmpop"  value="MPOP"      onclick="fmem('pop')">
+	</table>
+	</center>
+	</body>
+</html>
